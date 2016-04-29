@@ -22,15 +22,11 @@ public class Definition {
   public int getId() {
     return mId;
   }
+  public static void clear() {
+    definitionInstances.clear();
+  }
   public static ArrayList<Definition> all() {
     return definitionInstances;
-  }
-  public static Definition find(int id) {
-    try {
-      return definitionInstances.get(id - 1);
-    } catch (IndexOutOfBoundsException e) {
-      return null;
-    }
   }
 
 

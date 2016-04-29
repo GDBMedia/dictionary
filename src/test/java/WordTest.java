@@ -3,6 +3,11 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 
 public class WordTest {
+    @After
+    public void tearDown() {
+      Word.clear();
+      Definition.clear();
+    }
     @Test
     public void getWord_testForWord() {
       Word yourApp = new Word("word");
@@ -12,13 +17,13 @@ public class WordTest {
     @Test
     public void getId_testForWord() {
       Word yourApp = new Word("word");
-      int expected = 6;
+      int expected = 1;
       assertEquals(expected, yourApp.getId());
     }
     @Test
     public void All_testForWord() {
       Word yourApp = new Word("word");
-      int expected = 5;
+      int expected = 1;
       assertEquals(expected, yourApp.all().size());
     }
     @Test
@@ -47,6 +52,12 @@ public class WordTest {
     @Test
     public void find_returnsNullWhenNoWordFound_null() {
       assertTrue(Word.find(999) == null);
+    }
+    @Test
+    public void clear_emptiesAllWordsFromList_0() {
+      Word testWord = new Word("word");
+      Word.clear();
+      assertEquals(Word.all().size(), 0);
     }
 
 }

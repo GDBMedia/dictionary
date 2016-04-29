@@ -24,6 +24,9 @@ public class Word {
   public void clearArray(){
     mArrayOfDefs.clear();
   }
+  public static void clear() {
+    wordInstances.clear();
+  }
   public ArrayList<String> fillArray(){
     ArrayList<Definition> definitions = Definition.all();
     for(Definition definition : definitions){
