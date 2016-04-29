@@ -31,7 +31,6 @@ public class App {
       HashMap<String, Object> model = new HashMap<String, Object>();
       Word word = Word.find(Integer.parseInt(request.params(":id")));
       model.put("word", word);
-      model.put("definitions", Definition.all());
       model.put("template", "templates/word.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());

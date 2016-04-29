@@ -1,10 +1,11 @@
 <h1>Definition!</h1>
-#if($definitions)
-  #foreach($definition in $definitions)
-    #if($definition.getWord().equals($word.getWord()))
-      <h2>$definition.getDef()</h2>
-    #end
+$word.clearArray()
+#if($word)
+  <h2><ol>
+  #foreach($definition in $word.fillArray())
+    <li>$definition</li>
   #end
+  </ol></h2>
 #end
 <form action='/definition' method='post'>
   <input name="word" id="word" value="$word.getWord()" type="hidden">

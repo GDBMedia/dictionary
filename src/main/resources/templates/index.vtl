@@ -1,8 +1,10 @@
 <h1>Dictionary!</h1>
 #if($words)
+  <h1><ol>
   #foreach($word in $words)
-    <h1><a href="/words/$word.getId()">$word.getWord()</a></h1>
+    <li><a href="/words/$word.getId()">$word.getWord()</a></li>
   #end
+  </ol></h1>
 #end
 <form action='/words' method='post'>
   <div class="form-group">
