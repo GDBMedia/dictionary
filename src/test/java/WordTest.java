@@ -24,7 +24,7 @@ public class WordTest {
     public void All_testForWord() {
       Word yourApp = new Word("word");
       int expected = 1;
-      assertEquals(expected, yourApp.all().size());
+      assertEquals(expected,  yourApp.all().size());
     }
     @Test
     public void returnArray_testForWord() {
