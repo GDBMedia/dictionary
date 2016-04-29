@@ -1,0 +1,16 @@
+<h1>Definition!</h1>
+#if($definitions)
+  #foreach($definition in $definitions)
+    #if($definition.getWord().equals($word.getWord()))
+      <h2>$definition.getDef()</h2>
+    #end
+  #end
+#end
+<form action='/definition' method='post'>
+  <input name="word" id="word" value="$word.getWord()" type="hidden">
+  <div class="form-group">
+    <label for="definition">Add Definition:</label>
+    <textarea class="form-control" rows="4" name="definition" id="definition"></textarea>
+  </div>
+  <button type="submit" class="btn">Add!</button>
+</form>

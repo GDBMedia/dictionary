@@ -1,0 +1,13 @@
+<h1>Dictionary!</h1>
+#if($words)
+  #foreach($word in $words)
+    <h1><a href="/words/$word.getId()">$word.getWord()</a></h1>
+  #end
+#end
+<form action='/words' method='post'>
+  <div class="form-group">
+    <label for="word">Add Word:</label>
+    <input name="word" class="form-control" id="word" type="text">
+  </div>
+  <button type="submit" class="btn">Add!</button>
+</form>
