@@ -1,0 +1,84 @@
+#main{
+  border-bottom: 0.5em #ae0015 solid;
+  min-height: 20vh;
+  text-align: center;
+  margin-bottom: 0;
+  background-color: #2d5f7c;
+}
+.reg{
+  border-bottom: 0.5em #ae0015 solid;
+  min-height: 15vh;
+  text-align: center;
+  margin-bottom: 0;
+  background-color: #2d5f7c;
+}
+body{
+  font-family: 'Righteous', cursive;
+  background-color: #eee;
+}
+.body{
+  margin: 2em;
+  text-align: center;
+}
+#words a{
+    color: #ae0015 !important;
+}
+#words a:hover {
+    color: #790312 !important;
+}
+h1{
+  font-size: 4.5em;
+}
+h2{
+  font-size: 3em;
+}
+li{
+  padding-bottom: 2em;
+}
+.container{
+  margin-top: 0;
+  min-height: 78vh;
+  min-width: 70vw;
+  background-color: white;
+}
+#word, #definition{
+  margin: 1em;
+  width: 50%;
+  font-size: 2em;
+  height: 2em;
+}
+label{
+  font-size: 3em;
+}
+form{
+  margin: auto;
+  width: 70%;
+}
+#logo{
+  height: 18vh;
+  margin: auto;
+}
+.reglogo{
+  height: 13vh;
+  margin: auto;
+}
+.btn-mycolor{
+  font-size: 2em;
+  padding: 0.5em;
+  background-color: #ae0015;
+  color: white;
+}
+.btn-mycolor:hover{
+  font-size: 2em;
+  padding: 0.5em;
+  background-color: #790312;
+  color: white;
+}
+
+ol{
+  text-align: left;
+  color: #ae0015;
+}
+.center{
+  text-align: center;
+}
