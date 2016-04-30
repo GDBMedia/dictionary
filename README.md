@@ -9,7 +9,6 @@ a slightly advanced java web application that takes in a users Word and then dis
 ## Setup/Installation Requirements
 
 * Clone repository, or visit https://quiet-harbor-41368.herokuapp.com/
-* Clone repository,
 * Install gradle
 * enter "gradle run" in the repositories directory
 * in your browser go to "localhost:4567"
