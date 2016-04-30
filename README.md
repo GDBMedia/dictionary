@@ -7,7 +7,9 @@
 a slightly advanced java web application that takes in a users Word and then displays it back on the main page. They can then add a definition to said word by clicking on the word. users are allowed to add more than one definition
 
 ## Setup/Installation Requirements
+
 * Clone repository, or visit https://quiet-harbor-41368.herokuapp.com/
+* Clone repository,
 * Install gradle
 * enter "gradle run" in the repositories directory
 * in your browser go to "localhost:4567"
