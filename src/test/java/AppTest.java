@@ -30,7 +30,7 @@ public class AppTest extends FluentTest {
   @Test
   public void _1rootTest() {
     goTo("http://localhost:4567/");
-    assertThat(pageSource()).contains("Dictionary!");
+    assertThat(pageSource()).contains("Add Word:");
   }
   @Test
   public void _2addWordSuccessTest() {
@@ -66,7 +66,7 @@ public class AppTest extends FluentTest {
     submit(".btn");
     click("a", withText("Add Word/View Words"));
     click("a", withText("Basketball"));
-    assertThat(pageSource()).contains("Definition!");
+    assertThat(pageSource()).contains("Add Definition:");
   }
   @Test
   public void _6addDefinitionSuccessTest() {
